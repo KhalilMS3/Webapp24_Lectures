@@ -1,0 +1,77 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  /* background-color: #242424; */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --bg-color: #f9f9f9;
+  --text-color: #151a30;
+  --link-color: #bb9742;
+  --header-bg: #656977;
+  --button-bg: #bb9742;
+}
+
+.dark-mode {
+  --bg-color: #151a30;
+  --text-color: #f9f9f9;
+  --link-color: #bb9742;
+  --header-bg: #1e2853;
+  --button-bg: #bb9742;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+  padding: 0;
+  margin: 0;
+}
+
+#header {
+  background-color: var(--header-bg);
+  padding: 1rem;
+  color: var(--text-color);
+}
+
+.main-header {
+  padding: 20px;
+}
+
+nav {
+  background-color: var(--header-bg);
+
+  a {
+    color: var(--link-color);
+  }
+}
+
+:where(section, article) p {
+  line-height: 1.6;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.3rem;
+}
+
+button {
+  background-color: var(--button-bg);
+  color: var(--text-color);
+  border: none;
+  border-radius: .2rem;
+  padding: 1rem 1.2rem;
+  cursor: pointer;
+  transition: background-color .3s;
+
+}
